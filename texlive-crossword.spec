@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/gene/crossword
+# catalog-date 2009-11-13 01:13:22 +0100
+# catalog-license other-free
+# catalog-version 1.8
 Name:		texlive-crossword
 Version:	1.8
 Release:	1
@@ -59,6 +65,7 @@ they're necessary). The author considers this style both
 %doc %{_texmfdistdir}/source/latex/crossword/Makefile
 %doc %{_texmfdistdir}/source/latex/crossword/cwpuzzle.dtx
 %doc %{_texmfdistdir}/source/latex/crossword/cwpuzzle.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -69,3 +76,5 @@ they're necessary). The author considers this style both
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
