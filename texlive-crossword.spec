@@ -65,3 +65,17 @@ they're necessary). The author considers this style both
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.8-2
++ Revision: 750625
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.8-1
++ Revision: 718166
+- texlive-crossword
+- texlive-crossword
+- texlive-crossword
+- texlive-crossword
+
