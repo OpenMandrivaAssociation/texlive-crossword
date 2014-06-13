@@ -6,7 +6,7 @@
 # catalog-version 1.9
 Name:		texlive-crossword
 Version:	1.9
-Release:	1
+Release:	2
 Summary:	Typeset crossword puzzles
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/gene/crossword
