@@ -1,19 +1,13 @@
-# revision 32657
-# category Package
-# catalog-ctan /macros/latex/contrib/gene/crossword
-# catalog-date 2014-01-13 10:33:20 +0100
-# catalog-license other-free
-# catalog-version 1.9
 Name:		texlive-crossword
-Version:	1.9
-Release:	7
+Version:	64375
+Release:	1
 Summary:	Typeset crossword puzzles
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/gene/crossword
 License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/crossword.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/crossword.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/crossword.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/crossword.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/crossword.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/crossword.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -38,26 +32,24 @@ specification of the clues (if they're necessary). The author
 considers this style both 'natural' and robust.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/crossword/cwpuzzle.sty
-%doc %{_texmfdistdir}/doc/latex/crossword/Makefile
-%doc %{_texmfdistdir}/doc/latex/crossword/README
-%doc %{_texmfdistdir}/doc/latex/crossword/cwpuzzle.pdf
+%{_texmfdistdir}/tex/latex/crossword
+%doc %{_texmfdistdir}/doc/latex/crossword
 #- source
-%doc %{_texmfdistdir}/source/latex/crossword/cwpuzzle.dtx
-%doc %{_texmfdistdir}/source/latex/crossword/cwpuzzle.ins
+%doc %{_texmfdistdir}/source/latex/crossword
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
