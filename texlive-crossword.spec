@@ -3,7 +3,7 @@ Version:	64375
 Release:	2
 Summary:	Typeset crossword puzzles
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/gene/crossword
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/gene/crossword
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/crossword.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/crossword.doc.r%{version}.tar.xz
