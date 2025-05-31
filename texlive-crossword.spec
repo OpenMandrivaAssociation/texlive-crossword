@@ -1,6 +1,6 @@
 Name:		texlive-crossword
-Version:	64375
-Release:	2
+Version:	73579
+Release:	1
 Summary:	Typeset crossword puzzles
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/gene/crossword
